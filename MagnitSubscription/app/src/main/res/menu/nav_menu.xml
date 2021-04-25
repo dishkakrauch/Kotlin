@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menItHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/menItSubs"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/nav_subs" />
+    <item
+        android:id="@+id/menItUsr"
+        android:icon="@drawable/ic_user"
+        android:title="@string/nav_usr" />
+</menu>
