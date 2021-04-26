@@ -8,7 +8,7 @@ import com.example.magnitsubscription.databinding.ActivityMainBinding
 import com.example.magnitsubscription.fragments.HomeFragment
 import com.example.magnitsubscription.fragments.SubsFragment
 import com.example.magnitsubscription.fragments.UsrFragment
-
+//
 class MainActivity : AppCompatActivity() {
     lateinit var bindingClass: ActivityMainBinding
 
