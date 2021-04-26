@@ -8,7 +8,7 @@ import com.example.magnitsubscription.databinding.ActivityMainBinding
 import com.example.magnitsubscription.fragments.HomeFragment
 import com.example.magnitsubscription.fragments.SubsFragment
 import com.example.magnitsubscription.fragments.UsrFragment
-//
+
 class MainActivity : AppCompatActivity() {
     lateinit var bindingClass: ActivityMainBinding
 
@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
-
         val homeFragment: Fragment = HomeFragment()
         val subsFragment: Fragment = SubsFragment()
         val usrFragment: Fragment = UsrFragment()
@@ -31,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
     }
 
     private fun makeCurrentFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().apply {
