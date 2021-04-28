@@ -15,18 +15,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmNv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        app:itemIconTint="@color/black"
-        app:itemRippleColor="@color/grey"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/nav_selector"
+        app:itemTextColor="@color/nav_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

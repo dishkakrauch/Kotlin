@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
     }
 
     private fun makeCurrentFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().apply {
