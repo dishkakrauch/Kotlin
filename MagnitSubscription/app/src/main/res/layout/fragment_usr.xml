@@ -17,13 +17,13 @@
         android:textColorHighlight="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tInfo" />
+        app:layout_constraintStart_toStartOf="@+id/tvInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 
     <TextView
-        android:id="@+id/tNotif"
+        android:id="@+id/tvNotif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
 
     <TextView
-        android:id="@+id/tInfo"
+        android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -47,10 +47,10 @@
         android:textColorHighlight="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tNotif"
+        app:layout_constraintEnd_toEndOf="@+id/tvNotif"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tNotif"
-        app:layout_constraintTop_toBottomOf="@+id/tNotif" />
+        app:layout_constraintStart_toStartOf="@+id/tvNotif"
+        app:layout_constraintTop_toBottomOf="@+id/tvNotif" />
 
     <TextView
         android:id="@+id/tvPhone"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
-        android:text="@string/phone"
+        android:text="@string/usr_phone"
         android:textColor="@color/half_black"
         android:textColorHighlight="@color/grey"
         android:textSize="18sp"
@@ -99,4 +99,17 @@
         app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="@+id/tvUsr"
         app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <ImageView
+        android:id="@+id/imvEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvUsr"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,5 +19,42 @@
         android:id="@+id/usrFragment"
         android:name="com.example.magnitsubscription.fragments.UsrFragment"
         android:label="fragment_usr"
-        tools:layout="@layout/fragment_usr" />
+        tools:layout="@layout/fragment_usr" >
+        <action
+            android:id="@+id/action_usrFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_usrFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_usrFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/supportFragment"
+        android:name="com.example.magnitsubscription.fragments.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" >
+        <action
+            android:id="@+id/action_supportFragment_to_usrFragment"
+            app:destination="@id/usrFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/notificationFragment"
+        android:name="com.example.magnitsubscription.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_usrFragment"
+            app:destination="@id/usrFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/infoFragment"
+        android:name="com.example.magnitsubscription.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_usrFragment"
+            app:destination="@id/usrFragment" />
+    </dialog>
 </navigation>

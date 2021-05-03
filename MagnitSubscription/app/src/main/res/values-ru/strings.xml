@@ -8,5 +8,16 @@
     <string name="notifications">Уведомления</string>
     <string name="info">Информация</string>
     <string name="exit">Выйти</string>
-    <string name="phone">+7 (900) 123-45-67</string>
+    <string name="usr_phone">+7 (900) 123 45 67</string>
+    <string name="support_phone">8 (800) 100 20 30</string>
+    <string name="call">Позвонить:</string>
+    <string name="write">Написать:</string>
+    <string name="support_email">Podpiska@magnit.ru</string>
+    <string name="notification_settings">Настройка уведомлений</string>
+    <string name="email_notification">Получать Email-уведомления</string>
+    <string name="sms_notification">Получать SMS-уведомления</string>
+    <string name="push_notification">Получать Push-уведомления</string>
+    <string name="demo">Это демо-версия прилоежния для хакатона VTBxMGNT</string>
+    <string name="rights">Все права принадлежат ПАО Магнит</string>
+    <string name="dev">Будет доступно в полной вресии</string>
 </resources>

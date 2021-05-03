@@ -8,5 +8,16 @@
     <string name="notifications">Notifications</string>
     <string name="info">Information</string>
     <string name="exit">Exit</string>
-    <string name="phone">+7 (900) 123-45-67</string>
+    <string name="usr_phone">+7 (900) 123 45 67</string>
+    <string name="support_phone">8 (800) 100 20 30</string>
+    <string name="call">Call:</string>
+    <string name="write">Email:</string>
+    <string name="support_email">Podpiska@magnit.ru</string>
+    <string name="notification_settings">Notification settings</string>
+    <string name="sms_notification">Enable SMS-notification</string>
+    <string name="push_notification">Enable Push-notification</string>
+    <string name="email_notification">Enable Email-notification</string>
+    <string name="demo">This is a demo app for hackaton VTBxMGNT</string>
+    <string name="rights">All rights reserved to PJSC Magnit</string>
+    <string name="dev">Will be available in full version</string>
 </resources>
