@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.magnitsubscription.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/subsFragment"
+        android:name="com.example.magnitsubscription.fragments.SubsFragment"
+        android:label="fragment_subs"
+        tools:layout="@layout/fragment_subs" />
+    <fragment
+        android:id="@+id/usrFragment"
+        android:name="com.example.magnitsubscription.fragments.UsrFragment"
+        android:label="fragment_usr"
+        tools:layout="@layout/fragment_usr" />
+</navigation>

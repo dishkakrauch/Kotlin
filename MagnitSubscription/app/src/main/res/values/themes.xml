@@ -14,8 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="splashScreenTeheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/ic_splash</item>
-        <item name="android:statusBarColor">@color/grey</item>
-    </style>
+<!--    <style name="splashScreenTeheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--        <item name="android:windowBackground">@drawable/ic_splash</item>-->
+<!--        <item name="android:statusBarColor">@color/grey</item>-->
+<!--    </style>-->
 </resources>

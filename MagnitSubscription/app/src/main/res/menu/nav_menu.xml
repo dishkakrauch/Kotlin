@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menItHome"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home"
         android:title="@string/nav_home" />
     <item
-        android:id="@+id/menItSubs"
+        android:id="@+id/subsFragment"
         android:icon="@drawable/ic_notification"
         android:title="@string/nav_subs" />
     <item
-        android:id="@+id/menItUsr"
+        android:id="@+id/usrFragment"
         android:icon="@drawable/ic_user"
         android:title="@string/nav_usr" />
 </menu>

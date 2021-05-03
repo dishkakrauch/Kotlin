@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
-        android:text="+7 (900) 123 45 67"
+        android:text="@string/phone"
         android:textColor="@color/half_black"
         android:textColorHighlight="@color/grey"
         android:textSize="18sp"
