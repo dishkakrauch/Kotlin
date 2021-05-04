@@ -12,7 +12,7 @@
         android:id="@+id/btmNv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
+        android:background="@drawable/half_round_selector"
         app:itemIconTint="@color/nav_selector"
         app:itemTextColor="@color/nav_selector"
         app:layout_constraintBottom_toBottomOf="parent"

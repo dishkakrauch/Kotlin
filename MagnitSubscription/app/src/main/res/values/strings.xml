@@ -7,7 +7,7 @@
     <string name="support">Customer service</string>
     <string name="notifications">Notifications</string>
     <string name="info">Information</string>
-    <string name="exit">Exit</string>
+    <string name="exit">Logout your profile</string>
     <string name="usr_phone">+7 (900) 123 45 67</string>
     <string name="support_phone">8 (800) 100 20 30</string>
     <string name="call">Call:</string>
@@ -20,4 +20,9 @@
     <string name="demo">This is a demo app for hackaton VTBxMGNT</string>
     <string name="rights">All rights reserved to PJSC Magnit</string>
     <string name="dev">Will be available in full version</string>
+    <string name="subs_family">Family</string>
+    <string name="addr">First str, 1</string>
+    <string name="subs_optimum">Optimum</string>
+    <string name="subs_basic">Basic</string>
+    <string name="subs_individual">Individual</string>
 </resources>

@@ -7,7 +7,7 @@
     <string name="support">Служба поддержки</string>
     <string name="notifications">Уведомления</string>
     <string name="info">Информация</string>
-    <string name="exit">Выйти</string>
+    <string name="exit">Выйти из профиля</string>
     <string name="usr_phone">+7 (900) 123 45 67</string>
     <string name="support_phone">8 (800) 100 20 30</string>
     <string name="call">Позвонить:</string>
@@ -20,4 +20,9 @@
     <string name="demo">Это демо-версия прилоежния для хакатона VTBxMGNT</string>
     <string name="rights">Все права принадлежат ПАО Магнит</string>
     <string name="dev">Будет доступно в полной вресии</string>
+    <string name="subs_family">Семейная</string>
+    <string name="addr">ул. Первая, 1</string>
+    <string name="subs_optimum">Оптимальная</string>
+    <string name="subs_basic">Базовая</string>
+    <string name="subs_individual">Индивидуальная</string>
 </resources>

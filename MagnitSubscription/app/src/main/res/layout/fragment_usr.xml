@@ -7,50 +7,43 @@
     android:orientation="horizontal"
     tools:context=".fragments.UsrFragment">
 
-    <TextView
-        android:id="@+id/tvEx"
+    <Button
+        android:id="@+id/btnExt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
         android:text="@string/exit"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textColorHighlight="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="@+id/btnInf"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+        app:layout_constraintStart_toStartOf="@+id/btnInf"
+        app:layout_constraintTop_toBottomOf="@+id/btnInf" />
 
-    <TextView
-        android:id="@+id/tvNotif"
+    <Button
+        android:id="@+id/btnNtf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
         android:text="@string/notifications"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textColorHighlight="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvSupport"
-        app:layout_constraintHorizontal_bias="0.023"
-        app:layout_constraintStart_toStartOf="@+id/tvSupport"
-        app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
-
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/info"
-        android:textColor="@color/black"
-        android:textColorHighlight="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvNotif"
+        app:layout_constraintEnd_toEndOf="@+id/btnSprt"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvNotif"
-        app:layout_constraintTop_toBottomOf="@+id/tvNotif" />
+        app:layout_constraintStart_toStartOf="@+id/btnSprt"
+        app:layout_constraintTop_toBottomOf="@+id/btnSprt" />
 
     <TextView
         android:id="@+id/tvPhone"
@@ -85,21 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSupport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/support"
-        android:textColor="@color/black"
-        android:textColorHighlight="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvUsr"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="@+id/tvUsr"
-        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
-
     <ImageView
         android:id="@+id/imvEdt"
         android:layout_width="wrap_content"
@@ -112,4 +90,43 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvUsr"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/info"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNtf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnNtf"
+        app:layout_constraintTop_toBottomOf="@+id/btnNtf" />
+
+    <Button
+        android:id="@+id/btnSprt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/support"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
