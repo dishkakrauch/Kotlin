@@ -14,7 +14,20 @@
         android:id="@+id/subsFragment"
         android:name="com.example.magnitsubscription.fragments.SubsFragment"
         android:label="fragment_subs"
-        tools:layout="@layout/fragment_subs" />
+        tools:layout="@layout/fragment_subs" >
+        <action
+            android:id="@+id/action_subsFragment_to_subs1Fragment"
+            app:destination="@id/subs1Fragment" />
+        <action
+            android:id="@+id/action_subsFragment_to_subs2Fragment"
+            app:destination="@id/subs2Fragment" />
+        <action
+            android:id="@+id/action_subsFragment_to_subs3Fragment"
+            app:destination="@id/subs3Fragment" />
+        <action
+            android:id="@+id/action_subsFragment_to_subs4Fragment"
+            app:destination="@id/subs4Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/usrFragment"
         android:name="com.example.magnitsubscription.fragments.UsrFragment"
@@ -56,5 +69,41 @@
         <action
             android:id="@+id/action_infoFragment_to_usrFragment"
             app:destination="@id/usrFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/subs1Fragment"
+        android:name="com.example.magnitsubscription.fragments.Subs1Fragment"
+        android:label="fragment_subs1"
+        tools:layout="@layout/fragment_subs1" >
+        <action
+            android:id="@+id/action_subs1Fragment_to_subsFragment"
+            app:destination="@id/subsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/subs2Fragment"
+        android:name="com.example.magnitsubscription.fragments.Subs2Fragment"
+        android:label="fragment_subs2"
+        tools:layout="@layout/fragment_subs2" >
+        <action
+            android:id="@+id/action_subs2Fragment_to_subsFragment"
+            app:destination="@id/subsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/subs3Fragment"
+        android:name="com.example.magnitsubscription.fragments.Subs3Fragment"
+        android:label="fragment_subs3"
+        tools:layout="@layout/fragment_subs3" >
+        <action
+            android:id="@+id/action_subs3Fragment_to_subsFragment"
+            app:destination="@id/subsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/subs4Fragment"
+        android:name="com.example.magnitsubscription.fragments.Subs4Fragment"
+        android:label="fragment_subs4"
+        tools:layout="@layout/fragment_subs4" >
+        <action
+            android:id="@+id/action_subs4Fragment_to_subsFragment"
+            app:destination="@id/subsFragment" />
     </dialog>
 </navigation>

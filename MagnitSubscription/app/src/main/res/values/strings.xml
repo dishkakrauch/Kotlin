@@ -25,4 +25,19 @@
     <string name="subs_optimum">Optimum</string>
     <string name="subs_basic">Basic</string>
     <string name="subs_individual">Individual</string>
+    <string name="delivery">Delivery:</string>
+    <string name="free">free</string>
+    <string name="delay">Delivery delay count:</string>
+    <string name="period">Available period:</string>
+    <string name="best_price">Best price garantee:</string>
+    <string name="weight">Weight limit:</string>
+    <string name="recomendation">Additional delivery goods count:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="weeks">4/8/12 weeks</string>
+    <string name="cashbaсk_s1">price cashback + 1*</string>
+    <string name="cashback_s2">price cashback + 3*</string>
+    <string name="cashback_s3">price cashback + 5*</string>
+    <string name="cashback_s4">price cashback*</string>
+    <string name="cashback">*We return subscription and action price at delivery date difference with to your loyal card</string>
 </resources>
