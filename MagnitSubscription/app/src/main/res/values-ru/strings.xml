@@ -32,12 +32,12 @@
     <string name="best_price">Гарантия лучшей цены:</string>
     <string name="weight">Ограничение на вес доставки:</string>
     <string name="recomendation">Можно добавить к доставке товаров:</string>
-    <string name="yes">Да</string>
+    <string name="yes">Есть</string>
     <string name="no">Нет</string>
     <string name="weeks">4/8/12 недель</string>
-    <string name="cashbaсk_s1">кэшбэк цен + 1*</string>
+    <string name="cashbaсk_s1">кэшбэк цен + 5*</string>
     <string name="cashback_s2">кэшбэк цен + 3*</string>
-    <string name="cashback_s3">кэшбэк цен + 5*</string>
+    <string name="cashback_s3">кэшбэк цен + 1*</string>
     <string name="cashback_s4">кэшбэк цен*</string>
     <string name="cashback">*Мы вернем разницу в ценах на товар по подписке и акции в день доставки</string>
 </resources>

@@ -7,20 +7,75 @@
     tools:context=".fragments.Subs1Fragment">
 
     <TextView
-        android:id="@+id/tvCshBckDsc"
+        android:id="@+id/tvSub1AddSku"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/recomendation"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Lmt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Lmt"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Lmt" />
+
+    <TextView
+        android:id="@+id/tvSub1Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/no"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBckDsc" />
+
+    <TextView
+        android:id="@+id/tvSub1AddSkuCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Yes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Yes"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Yes" />
+
+    <ImageView
+        android:id="@+id/imVClsSub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/tvSub1Fr"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Fr"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Fr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvSub1CshBckDsc"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/cashback"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvCshBck"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBck"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvBstPrc"
-        app:layout_constraintTop_toBottomOf="@+id/tvBstPrc" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1BstPrc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1BstPrc" />
 
     <TextView
-        android:id="@+id/tvBstPrc"
+        android:id="@+id/tvSub1BstPrc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -28,13 +83,27 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvPrd"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Prd"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvPrd"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrd" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Prd"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Prd" />
 
     <TextView
-        android:id="@+id/tvCshBck"
+        android:id="@+id/tvSub1Lmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weight"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBckDsc" />
+
+    <TextView
+        android:id="@+id/tvSub1CshBck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,13 +111,13 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvWks"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Wks"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvWks"
-        app:layout_constraintTop_toBottomOf="@+id/tvWks" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Wks"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Wks" />
 
     <TextView
-        android:id="@+id/tvPrd"
+        android:id="@+id/tvSub1Prd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -56,13 +125,13 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvDel"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Del"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDel"
-        app:layout_constraintTop_toBottomOf="@+id/tvDel" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Del"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Del" />
 
     <TextView
-        android:id="@+id/tvWks"
+        android:id="@+id/tvSub1Wks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -70,13 +139,13 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvDelCnt"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1DelCnt"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDelCnt"
-        app:layout_constraintTop_toBottomOf="@+id/tvDelCnt" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1DelCnt"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1DelCnt" />
 
     <TextView
-        android:id="@+id/tvDel"
+        android:id="@+id/tvSub1Del"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -84,32 +153,32 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvDlvr2"
+        app:layout_constraintEnd_toEndOf="@+id/tvDlvrSub1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDlvr2"
-        app:layout_constraintTop_toBottomOf="@+id/tvDlvr2" />
+        app:layout_constraintStart_toStartOf="@+id/tvDlvrSub1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDlvrSub1" />
 
     <TextView
-        android:id="@+id/tvDelCnt"
+        android:id="@+id/tvSub1DelCnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="1"
+        android:text="2"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvFr"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Fr"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvFr"
-        app:layout_constraintTop_toBottomOf="@+id/tvFr" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Fr"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Fr" />
 
     <TextView
-        android:id="@+id/tvDlvr2"
+        android:id="@+id/tvDlvrSub1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:text="@string/delivery"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -118,12 +187,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvFr"
+        android:id="@+id/tvSub1Fr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/free"
@@ -133,8 +202,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDlvr2"
+        app:layout_constraintStart_toEndOf="@+id/tvDlvrSub1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Space
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1AddSkuCnt"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1AddSku"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1AddSku" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

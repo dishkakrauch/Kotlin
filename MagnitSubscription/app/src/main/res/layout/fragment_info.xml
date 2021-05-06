@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".fragments.InfoFragment">
 
+    <ImageView
+        android:id="@+id/imVClsInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvDemo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/tvDemo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:text="@string/demo"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +50,7 @@
 
     <Space
         android:layout_width="350dp"
-        android:layout_height="450dp"
+        android:layout_height="350dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/tvDesc"
         app:layout_constraintHorizontal_bias="0.0"
