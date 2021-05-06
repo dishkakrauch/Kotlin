@@ -40,4 +40,6 @@
     <string name="cashback_s3">price cashback + 1*</string>
     <string name="cashback_s4">price cashback*</string>
     <string name="cashback">*We return subscription and action price at delivery date difference with to your loyal card</string>
+    <string name="search">Search goods</string>
+    <string name="your_subs">Your subscription</string>
 </resources>

@@ -40,4 +40,6 @@
     <string name="cashback_s3">кэшбэк цен + 1*</string>
     <string name="cashback_s4">кэшбэк цен*</string>
     <string name="cashback">*Мы вернем разницу в ценах на товар по подписке и акции в день доставки</string>
+    <string name="search">Поиск товаров</string>
+    <string name="your_subs">Ваша подписка \"Семейная\"</string>
 </resources>
