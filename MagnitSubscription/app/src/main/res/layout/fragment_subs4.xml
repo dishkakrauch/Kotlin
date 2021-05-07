@@ -6,20 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Subs4Fragment">
 
-    <Space
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4AddSkuCnt"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4AddSku"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4AddSku" />
-
     <TextView
-        android:id="@+id/tvSub4AddSku"
+        android:id="@+id/tvSub4AddSku2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/recomendation"
+        android:text="@string/cost"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -27,6 +19,48 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvSub4Lmt"
         app:layout_constraintTop_toBottomOf="@+id/tvSub4Lmt" />
+
+    <TextView
+        android:id="@+id/tvSub4AddSkuCnt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price_s4"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4Yes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub4Yes"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4Yes" />
+
+    <TextView
+        android:id="@+id/tvSub4BstPrc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bonus"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4BstPrc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub4BstPrc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4BstPrc" />
+
+    <TextView
+        android:id="@+id/tvSub4CshBck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cashbaсk_s1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4CshBck"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub4CshBck"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4CshBck" />
 
     <TextView
         android:id="@+id/tvSub4Yes"
@@ -37,24 +71,10 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4CshBckDsc"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4CshBck2"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4CshBckDsc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4CshBckDsc" />
-
-    <TextView
-        android:id="@+id/tvSub4AddSkuCnt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="3"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4Yes"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4Yes"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4Yes" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub4CshBck2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4CshBck2" />
 
     <ImageView
         android:id="@+id/imVClsSub4"
@@ -70,24 +90,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tvSub4CshBckDsc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/cashback"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4CshBck"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4BstPrc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4BstPrc" />
-
-    <TextView
         android:id="@+id/tvSub4BstPrc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/best_price"
+        android:text="@string/discount"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -105,17 +112,17 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4CshBckDsc"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4BstPrc2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4CshBckDsc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4CshBckDsc" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub4BstPrc2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4BstPrc2" />
 
     <TextView
         android:id="@+id/tvSub4CshBck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/cashback_s4"
+        android:text="@string/discount_s4"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
@@ -171,7 +178,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="1"
+        android:text="2"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
@@ -213,4 +220,13 @@
         app:layout_constraintStart_toEndOf="@+id/tvDlvrSub4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Space
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4AddSkuCnt2"
+        app:layout_constraintStart_toStartOf="@+id/tvSub4AddSku2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4AddSku2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

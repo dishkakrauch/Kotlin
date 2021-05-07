@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="@string/subs_basic"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -39,34 +39,16 @@
         app:layout_constraintStart_toStartOf="@+id/imVwBsc"
         app:layout_constraintTop_toBottomOf="@+id/imVwBsc" />
 
-    <TextView
-        android:id="@+id/tvOpt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/subs_optimum"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imVwOpt"
-        app:layout_constraintTop_toBottomOf="@+id/imVwOpt" />
-
     <ImageView
         android:id="@+id/imVwFml"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/round_selector"
         android:src="@drawable/ic_big_family"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnAdr"
-        app:layout_constraintStart_toStartOf="@+id/btnAdr"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdr"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="@+id/imVwOpt"
+        app:layout_constraintStart_toStartOf="@+id/imVwOpt"
+        app:layout_constraintTop_toBottomOf="@+id/imVwOpt" />
 
     <TextView
         android:id="@+id/tvFml"
@@ -92,42 +74,60 @@
         android:drawableLeft="@drawable/ic_pin"
         android:text="@string/addr"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imVwOpt"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/round_selector"
         android:src="@drawable/ic_family"
-        app:layout_constraintEnd_toEndOf="@+id/imVwFml"
-        app:layout_constraintStart_toStartOf="@+id/imVwFml"
-        app:layout_constraintTop_toBottomOf="@+id/tvFml" />
+        app:layout_constraintEnd_toEndOf="@+id/imVwBsc"
+        app:layout_constraintStart_toStartOf="@+id/imVwBsc"
+        app:layout_constraintTop_toBottomOf="@+id/imVwBsc" />
+
+    <TextView
+        android:id="@+id/tvOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subs_optimum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imVwOpt"
+        app:layout_constraintTop_toBottomOf="@+id/imVwOpt" />
 
     <ImageView
         android:id="@+id/imVwBsc"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/round_selector"
         android:src="@drawable/ic_young_family"
-        app:layout_constraintEnd_toEndOf="@+id/imVwOpt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvOpt" />
+        app:layout_constraintEnd_toEndOf="@+id/imVwInd"
+        app:layout_constraintStart_toStartOf="@+id/imVwInd"
+        app:layout_constraintTop_toBottomOf="@+id/imVwInd" />
 
     <ImageView
         android:id="@+id/imVwInd"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round_selector"
         android:src="@drawable/ic_individual"
-        app:layout_constraintEnd_toEndOf="@+id/imVwBsc"
-        app:layout_constraintStart_toStartOf="@+id/imVwBsc"
-        app:layout_constraintTop_toBottomOf="@+id/tvBsc" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAdr"
+        app:layout_constraintStart_toStartOf="@+id/btnAdr"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

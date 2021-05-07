@@ -7,11 +7,11 @@
     tools:context=".fragments.Subs1Fragment">
 
     <TextView
-        android:id="@+id/tvSub1AddSku"
+        android:id="@+id/tvSub1AddSku2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/recomendation"
+        android:text="@string/cost"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -19,6 +19,48 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvSub1Lmt"
         app:layout_constraintTop_toBottomOf="@+id/tvSub1Lmt" />
+
+    <TextView
+        android:id="@+id/tvSub1AddSkuCnt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price_s1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Yes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Yes"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Yes" />
+
+    <TextView
+        android:id="@+id/tvSub1BstPrc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bonus"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1BstPrc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1BstPrc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1BstPrc" />
+
+    <TextView
+        android:id="@+id/tvSub1CshBck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cashbaсk_s1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBck"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBck"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBck" />
 
     <TextView
         android:id="@+id/tvSub1Yes"
@@ -29,24 +71,10 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBck2"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBckDsc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBckDsc" />
-
-    <TextView
-        android:id="@+id/tvSub1AddSkuCnt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="7"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub1Yes"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub1Yes"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub1Yes" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBck2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBck2" />
 
     <ImageView
         android:id="@+id/imVClsSub1"
@@ -62,24 +90,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tvSub1CshBckDsc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/cashback"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBck"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub1BstPrc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub1BstPrc" />
-
-    <TextView
         android:id="@+id/tvSub1BstPrc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/best_price"
+        android:text="@string/discount"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -97,17 +112,17 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub1CshBckDsc"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1BstPrc2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvSub1CshBckDsc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub1CshBckDsc" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1BstPrc2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1BstPrc2" />
 
     <TextView
         android:id="@+id/tvSub1CshBck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/cashbaсk_s1"
+        android:text="@string/discount_s1"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
@@ -210,8 +225,8 @@
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub1AddSkuCnt"
-        app:layout_constraintStart_toStartOf="@+id/tvSub1AddSku"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub1AddSku" />
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1AddSkuCnt2"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1AddSku2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1AddSku2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
