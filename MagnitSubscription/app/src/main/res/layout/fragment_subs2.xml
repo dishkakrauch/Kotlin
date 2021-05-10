@@ -7,7 +7,7 @@
     tools:context=".fragments.Subs2Fragment">
 
     <TextView
-        android:id="@+id/tvSub2AddSku2"
+        android:id="@+id/tvSub2AddSku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSub2Lmt" />
 
     <TextView
-        android:id="@+id/tvSub2AddSkuCnt2"
+        android:id="@+id/tvSub2AddSkuCnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -224,9 +224,22 @@
     <Space
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSub2Gt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSub2Gt"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub2Gt" />
+
+    <Button
+        android:id="@+id/btnSub2Gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub2AddSkuCnt2"
-        app:layout_constraintStart_toStartOf="@+id/tvSub2AddSku2"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub2AddSku2" />
+        android:text="@string/go_to"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub2AddSkuCnt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub2AddSku"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub2AddSku" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

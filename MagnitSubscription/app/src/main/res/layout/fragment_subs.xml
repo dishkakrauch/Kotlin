@@ -5,46 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".fragments.SubsFragment" >
-
-    <TextView
-        android:id="@+id/tvInd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/subs_individual"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imVwInd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imVwInd"
-        app:layout_constraintTop_toBottomOf="@+id/imVwInd" />
-
-    <TextView
-        android:id="@+id/tvBsc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/subs_basic"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imVwBsc"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imVwBsc"
-        app:layout_constraintTop_toBottomOf="@+id/imVwBsc" />
+    tools:context=".fragments.SubsFragment">
 
     <ImageView
         android:id="@+id/imVwFml"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_selector"
+        android:scaleType="fitEnd"
         android:src="@drawable/ic_big_family"
         app:layout_constraintEnd_toEndOf="@+id/imVwOpt"
         app:layout_constraintStart_toStartOf="@+id/imVwOpt"
@@ -54,17 +23,17 @@
         android:id="@+id/tvFml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:text="@string/subs_family"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imVwFml"
+        app:layout_constraintBottom_toBottomOf="@+id/imVwFml"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imVwFml"
-        app:layout_constraintTop_toBottomOf="@+id/imVwFml" />
+        app:layout_constraintTop_toTopOf="@+id/imVwFml" />
 
     <Button
         android:id="@+id/btnAdr"
@@ -84,9 +53,10 @@
     <ImageView
         android:id="@+id/imVwOpt"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_selector"
+        android:scaleType="fitEnd"
         android:src="@drawable/ic_family"
         app:layout_constraintEnd_toEndOf="@+id/imVwBsc"
         app:layout_constraintStart_toStartOf="@+id/imVwBsc"
@@ -96,38 +66,74 @@
         android:id="@+id/tvOpt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:text="@string/subs_optimum"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imVwOpt"
+        app:layout_constraintEnd_toEndOf="@+id/imVwOpt"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imVwOpt"
-        app:layout_constraintTop_toBottomOf="@+id/imVwOpt" />
+        app:layout_constraintTop_toTopOf="@+id/imVwOpt" />
 
     <ImageView
         android:id="@+id/imVwBsc"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_selector"
+        android:scaleType="fitEnd"
         android:src="@drawable/ic_young_family"
         app:layout_constraintEnd_toEndOf="@+id/imVwInd"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imVwInd"
         app:layout_constraintTop_toBottomOf="@+id/imVwInd" />
+
+    <TextView
+        android:id="@+id/tvBsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/subs_basic"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imVwBsc"
+        app:layout_constraintEnd_toEndOf="@+id/imVwBsc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imVwBsc"
+        app:layout_constraintTop_toTopOf="@+id/imVwBsc" />
 
     <ImageView
         android:id="@+id/imVwInd"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_selector"
+        android:scaleType="fitEnd"
         android:src="@drawable/ic_individual"
         app:layout_constraintEnd_toEndOf="@+id/btnAdr"
         app:layout_constraintStart_toStartOf="@+id/btnAdr"
         app:layout_constraintTop_toBottomOf="@+id/btnAdr" />
+
+    <TextView
+        android:id="@+id/tvInd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/subs_individual"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imVwInd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imVwInd"
+        app:layout_constraintTop_toTopOf="@+id/imVwInd"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,5 +52,15 @@
     <string name="price_s2">7000-8999 rub</string>
     <string name="price_s3">5000-6999 rub</string>
     <string name="price_s4">3000-4999 rub</string>
-    <string name="price">Reuired good total cost</string>
+    <string name="cost">Reuired good total cost</string>
+    <string name="choose">Choose and search for goods</string>
+    <string name="go_to">Go to goods</string>
+    <string name="next_delivery">Next delivery:</string>
+    <string name="change">Change</string>
+    <string name="date">6th of June</string>
+    <string name="time">06:00 - 08:00</string>
+    <string name="propose">Propositions for you:</string>
+    <string name="profit">Profit for you:</string>
+    <string name="add">Add to your next delivery:</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

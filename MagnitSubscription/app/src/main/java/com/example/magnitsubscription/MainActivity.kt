@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.viewpager2.widget.ViewPager2
 import com.example.magnitsubscription.databinding.ActivityMainBinding
 import com.example.magnitsubscription.fragments.HomeFragment
 import com.example.magnitsubscription.fragments.SubsFragment

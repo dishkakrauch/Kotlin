@@ -21,7 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSub4Lmt" />
 
     <TextView
-        android:id="@+id/tvSub4AddSkuCnt2"
+        android:id="@+id/tvSub4AddSkuCnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -224,9 +224,22 @@
     <Space
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSub4AddSkuCnt2"
-        app:layout_constraintStart_toStartOf="@+id/tvSub4AddSku2"
-        app:layout_constraintTop_toBottomOf="@+id/tvSub4AddSku2" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSub4Gt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSub4Gt"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub4Gt" />
+
+    <Button
+        android:id="@+id/btnSub4Gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/go_to"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub4AddSkuCnt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub4AddSkuCnt"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub4AddSkuCnt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

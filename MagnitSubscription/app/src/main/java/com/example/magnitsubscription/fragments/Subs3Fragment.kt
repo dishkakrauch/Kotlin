@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.magnitsubscription.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.snackbar.Snackbar
 
 class Subs3Fragment : BottomSheetDialogFragment() {
 
@@ -18,6 +20,7 @@ class Subs3Fragment : BottomSheetDialogFragment() {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_subs3, container, false)
         val imVClsSub3: ImageView = view.findViewById(R.id.imVClsSub3)
+        val btnSub3Gt: Button = view.findViewById(R.id.btnSub3Gt)
 
         imVClsSub3.setOnClickListener {
             findNavController().navigate(R.id.action_subs3Fragment_to_subsFragment)

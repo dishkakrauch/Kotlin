@@ -8,12 +8,28 @@
     tools:context=".fragments.HomeFragment" >
 
     <TextView
-        android:id="@+id/tvFml2"
+        android:id="@+id/tvProp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/propose"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vP"
+        app:layout_constraintTop_toBottomOf="@+id/vP" />
+
+    <TextView
+        android:id="@+id/tvMnFml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/your_subs"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -23,17 +39,78 @@
         app:layout_constraintStart_toStartOf="@+id/imVwChsn"
         app:layout_constraintTop_toBottomOf="@+id/imVwChsn" />
 
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvMnFml"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvMnFml"
+        app:layout_constraintTop_toBottomOf="@+id/tvMnFml" />
+
     <ImageView
         android:id="@+id/imVwChsn"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/round_selector"
+        android:scaleType="fitEnd"
         android:src="@drawable/ic_big_family"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/srchV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvFml4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvFml3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFml3"
+        app:layout_constraintTop_toBottomOf="@+id/tvFml3" />
+
+    <TextView
+        android:id="@+id/tvFml5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvFml4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFml4"
+        app:layout_constraintTop_toBottomOf="@+id/tvFml4" />
+
+    <TextView
+        android:id="@+id/tvFml3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/next_delivery"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imVwChsn"
+        app:layout_constraintEnd_toEndOf="@+id/imVwChsn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imVwChsn"
+        app:layout_constraintTop_toTopOf="@+id/imVwChsn"
         app:layout_constraintVertical_bias="0.0" />
 
     <SearchView
@@ -48,4 +125,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnChgSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/change"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFml5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFml5"
+        app:layout_constraintTop_toBottomOf="@+id/tvFml5" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imVwChsn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imVwChsn"
+        app:layout_constraintTop_toBottomOf="@+id/imVwChsn"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vP2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/vP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vP"
+        app:layout_constraintTop_toBottomOf="@+id/vP"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

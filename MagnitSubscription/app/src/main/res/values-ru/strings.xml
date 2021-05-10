@@ -52,6 +52,14 @@
     <string name="price_s2">7000-8999 руб</string>
     <string name="price_s3">5000-6999 руб</string>
     <string name="price_s4">3000-4999 руб</string>
-    <string name="price">Необходимая стоимость товаров:</string>
     <string name="cost">Необходимая сумма выбранных товаров</string>
+    <string name="choose">Выбрать и перейти к товарам</string>
+    <string name="go_to">Перейти к товарам</string>
+    <string name="next_delivery">Следующая доставка:</string>
+    <string name="change">Изменить</string>
+    <string name="date">6th of June</string>
+    <string name="time">06:00 - 08:00</string>
+    <string name="propose">Предложения для Вас:</string>
+    <string name="profit">Выгодно для Вас:</string>
+    <string name="add">Добавьте в следующую доставку:</string>
 </resources>
