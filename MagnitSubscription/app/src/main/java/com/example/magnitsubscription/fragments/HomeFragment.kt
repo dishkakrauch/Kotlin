@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -12,6 +13,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.magnitsubscription.R
 import com.example.magnitsubscription.SliderAdapter
 import com.example.magnitsubscription.SliderItem
+import com.google.android.material.snackbar.Snackbar
 import java.lang.Math.abs
 
 class HomeFragment : Fragment() {
@@ -25,6 +27,7 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_home, container, false)
+        val btnChgSub: Button = view.findViewById(R.id.btnChgSub)
         val sliderItems: MutableList<SliderItem> = ArrayList()
         val sliderItems2: MutableList<SliderItem> = ArrayList()
         val cPt = CompositePageTransformer()
@@ -65,6 +68,11 @@ class HomeFragment : Fragment() {
             // page.scaleY = .85f + r * .25f
         }
         vp2.setPageTransformer(cPt)
+
+        btnChgSub.setOnClickListener { view ->
+            Snackbar.make(view, R.string.dev, Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
 
         return view
     }
