@@ -168,10 +168,10 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvDlvrSub2"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub2Dlvr"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDlvrSub2"
-        app:layout_constraintTop_toBottomOf="@+id/tvDlvrSub2" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub2Dlvr"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub2Dlvr" />
 
     <TextView
         android:id="@+id/tvSub2DelCnt"
@@ -188,15 +188,29 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSub2Fr" />
 
     <TextView
-        android:id="@+id/tvDlvrSub2"
+        android:id="@+id/tvSub2Dlvr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/delivery"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub2Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub2Name"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub2Name" />
+
+    <TextView
+        android:id="@+id/tvSub2Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/delivery"
+        android:layout_marginTop="16dp"
+        android:text="@string/subs_optimum"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -217,7 +231,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDlvrSub2"
+        app:layout_constraintStart_toEndOf="@+id/tvSub2Dlvr"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 

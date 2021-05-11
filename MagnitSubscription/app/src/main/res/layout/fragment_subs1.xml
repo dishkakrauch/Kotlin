@@ -7,6 +7,20 @@
     tools:context=".fragments.Subs1Fragment">
 
     <TextView
+        android:id="@+id/tvSub1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/subs_family"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/tvSub1AddSku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -168,10 +182,10 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tvDlvrSub1"
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Dlvr"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDlvrSub1"
-        app:layout_constraintTop_toBottomOf="@+id/tvDlvrSub1" />
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Dlvr"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Dlvr" />
 
     <TextView
         android:id="@+id/tvSub1DelCnt"
@@ -188,18 +202,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSub1Fr" />
 
     <TextView
-        android:id="@+id/tvDlvrSub1"
+        android:id="@+id/tvSub1Dlvr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:text="@string/delivery"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/tvSub1Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSub1Name"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub1Name" />
 
     <TextView
         android:id="@+id/tvSub1Fr"
@@ -217,7 +231,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDlvrSub1"
+        app:layout_constraintStart_toEndOf="@+id/tvSub1Dlvr"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
